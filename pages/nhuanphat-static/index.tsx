@@ -4,9 +4,11 @@ const NhuanPhatStatic = ({ news }: any) => {
   return (
     <>
       {news.map((item: any) => (
-        <Link href={`/nhuanphat-static/${item.slug}`}>
-          <a>{item.title}</a>
-        </Link>
+        <div key={item.slug}>
+          <Link href={`/nhuanphat-static/${item.slug}`}>
+            <a>{item.title}</a>
+          </Link>
+        </div>
       ))}
     </>
   );
