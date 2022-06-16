@@ -16,7 +16,7 @@ const NhuanPhatStatic = ({ news }: any) => {
 
 export const getStaticProps = async () => {
   const nhanPhatData = await fetch(
-    `https://gateway.kientrucnhuanphat.vn/cms/post/fengshui?number=1&size=4`
+    `https://gateway.kientrucnhuanphat.vn/cms/post/fengshui`
   );
   const data = await nhanPhatData.json();
   console.log(data);

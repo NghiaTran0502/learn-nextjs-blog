@@ -23,7 +23,7 @@ const NhuanPhatStaticSlug = ({ data }: any) => {
 
 export async function getStaticPaths() {
   const nhanPhatData = await fetch(
-    `https://gateway.kientrucnhuanphat.vn/cms/post/fengshui?number=1&size=4`
+    `https://gateway.kientrucnhuanphat.vn/cms/post/fengshui`
   );
   const data = await nhanPhatData.json();
   return {
